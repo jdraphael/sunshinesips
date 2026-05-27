@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --radius: 1rem;
+  --background: #fff9f1;
+  --foreground: #3a3038;
+  --card: #ffffff;
+  --card-foreground: #3a3038;
+  --popover: #ffffff;
+  --popover-foreground: #3a3038;
+  --primary: #ffd65a;
+  --primary-foreground: #5a354e;
+  --secondary: #ffdce5;
+  --secondary-foreground: #5a354e;
+  --muted: #fff3d0;
+  --muted-foreground: #6f5d67;
+  --accent: #b18bd9;
+  --accent-foreground: #ffffff;
+  --destructive: #c85252;
+  --border: #f2d7a6;
+  --input: #f2d7a6;
+  --ring: #ffd65a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --font-sans: var(--font-quicksand);
+  --font-serif: var(--font-playfair);
+  --font-script: var(--font-pacifico);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(255, 220, 229, 0.65), transparent 30rem),
+    radial-gradient(circle at 90% 15%, rgba(177, 139, 217, 0.2), transparent 22rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-quicksand), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: #ffd65a;
+  color: #5a354e;
+}
+
+.font-script {
+  font-family: var(--font-pacifico), cursive;
+}
+
+.font-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.masonry {
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
