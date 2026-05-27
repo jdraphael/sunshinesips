@@ -31,6 +31,37 @@ export const metadata: Metadata = {
   },
   description:
     "Sunshine Sips is a cozy lemonade, drink inspiration, and pastel lifestyle brand for bright days and happy rituals.",
+  applicationName: "Sunshine Sips",
+  appleWebApp: {
+    capable: true,
+    title: "Sunshine Sips",
+    statusBarStyle: "default",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/icons/icon-192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+  },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     title: "Sunshine Sips",
     description:
