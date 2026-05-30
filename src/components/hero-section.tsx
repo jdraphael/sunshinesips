@@ -64,7 +64,7 @@ export function HeroSection() {
               src="/images/generated/hero-lemonade.png"
               alt="Sparkling lemonade with lemons and yellow flowers in warm sunlight"
               fill
-              priority
+              loading="eager"
               sizes="(max-width: 768px) 100vw, 56vw"
               className="object-cover"
             />

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Pacifico, Playfair_Display, Quicksand } from "next/font/google";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
 const quicksand = Quicksand({
@@ -78,13 +76,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${quicksand.variable} ${playfair.variable} ${pacifico.variable} antialiased`}
     >
-      <body className="flex min-h-screen flex-col">
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
