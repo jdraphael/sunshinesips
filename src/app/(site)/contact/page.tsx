@@ -29,7 +29,7 @@ export default function ContactPage() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover"
-                priority
+                loading="eager"
               />
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
