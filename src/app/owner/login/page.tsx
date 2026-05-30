@@ -46,7 +46,7 @@ export default function OwnerLoginPage() {
               Owner Portal
             </p>
             <h1 className="mt-8 text-2xl font-extrabold text-[#3A3038]">
-              Welcome Back, Lila!
+              Welcome Back, Lyla!
             </h1>
             <p className="mt-3 text-sm font-semibold text-[#6F5D67]">
               Log in to open your stand.

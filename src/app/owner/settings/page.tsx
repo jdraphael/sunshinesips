@@ -12,7 +12,7 @@ export default function OwnerSettingsPage() {
             Settings
           </h1>
           <p className="mt-3 text-base font-medium leading-7 text-[#6F5D67]">
-            This local-first owner portal is set up for Lila&apos;s Sunshine Sips
+            This local-first owner portal is set up for Lyla&apos;s Sunshine Sips
             stand. Future settings can add tax rules, real payment connections,
             and receipt templates without changing the guided checkout flow.
           </p>

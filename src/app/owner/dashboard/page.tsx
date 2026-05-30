@@ -17,7 +17,7 @@ export default function OwnerDashboardPage() {
             Owner Portal
           </p>
           <h1 className="mt-2 font-serif text-4xl font-bold text-[#5A354E]">
-            Good Morning, Lila
+            Good Morning, Lyla
           </h1>
         </div>
         <HeroBanner
